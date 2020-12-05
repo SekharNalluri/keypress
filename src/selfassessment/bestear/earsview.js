@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import {
-    View, Text, TouchableOpacity, StatusBar, ImageBackground
+    View, Text, TouchableOpacity, StyleSheet
 } from "react-native";
-import styles from "./styles";
 import { SvgUri } from 'react-native-svg';
 
 
@@ -33,7 +32,7 @@ export default class EarView extends Component {
                     < SvgUri
                         width={25}
                         height={25}
-                        style={{ alignSelf: 'center', opacity: (type == 'right' || type == 'both') ? 1 : 0.5,marginLeft:10 }}
+                        style={{ alignSelf: 'center', opacity: (type == 'right' || type == 'both') ? 1 : 0.5, marginLeft: 10 }}
                         uri={selected ? rightWhiteEar : rightMagentaEar}
                     />
 
@@ -47,3 +46,27 @@ export default class EarView extends Component {
         )
     }
 }
+
+const styles = StyleSheet.create({
+
+    circle: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: "#fff",
+        height: 120,
+        width: 120,
+        borderRadius: 1000,
+        elevation: 4,
+        margin: 5
+    },
+    darkCircle: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: "#000",
+        height: 120,
+        width: 120,
+        borderRadius: 1000,
+        elevation: 4,
+        margin: 5
+    },
+})

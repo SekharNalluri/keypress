@@ -5,7 +5,6 @@ import {
 import LinearGradient from 'react-native-linear-gradient';
 import { SvgUri } from 'react-native-svg';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import styles from "./styles";
 import NextPreviousButtons from "../nextpreviousbutton/nextpreviousbutton";
 import { ScrollView, TouchableHighlight } from "react-native-gesture-handler";
 import Sound from 'react-native-sound';
@@ -484,14 +483,15 @@ const HearingTest = ({ navigation, hostname, primaryEar, swapLeftRight, binaural
                 </View>
             </ScrollView>
             <NextPreviousButtons
-                enableButton={state == 'completed' ? true : false}
+                //enableButton={state == 'completed' ? true : false}
+                enableButton={true}
                 onPreviousPress={() => {
                     navigation.navigate('BestEar')
                 }}
                 onNextPress={() => {
-                    if (state == 'completed') {
-                        navigation.navigate('SelfResults')
-                    }
+                    //if (state == 'completed') 
+                    navigation.navigate('SelfResults')
+
                 }} />
         </View >
     );

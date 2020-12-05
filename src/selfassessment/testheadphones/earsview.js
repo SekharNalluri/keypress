@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import {
-    View, Text, TouchableOpacity, StatusBar, ImageBackground
+    View, Text, StyleSheet
 } from "react-native";
-import styles from "./styles";
 import { SvgUri } from 'react-native-svg';
 import { TouchableHighlight } from "react-native-gesture-handler";
 
@@ -26,29 +25,52 @@ export default class EarView extends Component {
             <TouchableHighlight style={selected ? styles.darkCircle : styles.circle} onPress={onPress} >
                 <View>
 
-               
-                <View style={{ flexDirection: 'row' }}>
-                    < SvgUri
-                        width={25}
-                        height={25}
-                        style={{ alignSelf: 'center', opacity: (type == 'left' || type == 'both') ? 1 : 0.5 }}
-                        uri={selected ? letfWhiteEar : letfMagentaEar}
-                    />
-                    < SvgUri
-                        width={25}
-                        height={25}
-                        style={{ alignSelf: 'center', opacity: (type == 'right' || type == 'both') ? 1 : 0.5 }}
-                        uri={selected ? rightWhiteEar : rightMagentaEar}
-                    />
 
-                </View >
+                    <View style={{ flexDirection: 'row' }}>
+                        < SvgUri
+                            width={25}
+                            height={25}
+                            style={{ alignSelf: 'center', opacity: (type == 'left' || type == 'both') ? 1 : 0.5 }}
+                            uri={selected ? letfWhiteEar : letfMagentaEar}
+                        />
+                        < SvgUri
+                            width={25}
+                            height={25}
+                            style={{ alignSelf: 'center', opacity: (type == 'right' || type == 'both') ? 1 : 0.5 }}
+                            uri={selected ? rightWhiteEar : rightMagentaEar}
+                        />
 
-                <Text style={{ fontFamily: 'LibreFranklin-Black', fontWeight: '400', marginTop: 5, color: selected ? '#fff' : '#EE0B77' }}>
-                    {type == 'left' ? 'Left Ear' : (type == 'right' ? 'Right Ear' : 'Both Ears')}
-                </Text>
+                    </View >
+
+                    <Text style={{ fontFamily: 'LibreFranklin-Black', fontWeight: '400', marginTop: 5, color: selected ? '#fff' : '#EE0B77' }}>
+                        {type == 'left' ? 'Left Ear' : (type == 'right' ? 'Right Ear' : 'Both Ears')}
+                    </Text>
                 </View>
             </TouchableHighlight>
 
         )
     }
 }
+
+const styles = StyleSheet.create({
+    circle: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: "#fff",
+        height: 100,
+        width: 100,
+        borderRadius: 1000,
+        elevation: 4,
+        margin: 10
+    },
+    darkCircle: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: "#000",
+        height: 100,
+        width: 100,
+        borderRadius: 1000,
+        elevation: 4,
+        margin: 10
+    },
+})

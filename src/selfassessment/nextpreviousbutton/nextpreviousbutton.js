@@ -1,51 +1,35 @@
-import React, { Component } from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, Dimensions } from 'react-native';
+import React from 'react';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/Entypo';
 
 
-export default class NextPreviousButtons extends Component {
-  constructor(props) {
-    super(props);
-  }
-  componentDidMount() {
-
-  }
-  componentDidUpdate() {
-  }
-
-  render() {
-    return (
-      <View style={styles.container}>
-        <TouchableOpacity
-          style={styles.previous}
-          onPress={this.props.onPreviousPress}
-        >
-          <Text style={styles.previousText}>
-            <Icon name={'chevron-thin-left'} size={18} />
+export default (props) => {
+  return (
+    <View style={styles.container}>
+      <TouchableOpacity
+        style={styles.previous}
+        onPress={props.onPreviousPress}
+      >
+        <Text style={styles.previousText}>
+          <Icon name={'chevron-thin-left'} size={18} />
             Previous
           </Text>
-        </TouchableOpacity>
+      </TouchableOpacity>
 
-        {this.props.enableButton == true ? (<TouchableOpacity
-          style={styles.next}
-          onPress={this.props.onNextPress}
-        >
-          <Text style={styles.nextText}>Next</Text>
-        </TouchableOpacity>) : (<TouchableOpacity
-          style={styles.nextDisable}
-        //onPress={this.props.onNextPress}
-        >
-          <Text style={styles.nextText}>Next</Text>
-        </TouchableOpacity>)}
-
-
-
-      </View>
-    );
-  }
-
-
+      {props.enableButton == true ? (<TouchableOpacity
+        style={styles.next}
+        onPress={props.onNextPress}
+      >
+        <Text style={styles.nextText}>Next</Text>
+      </TouchableOpacity>) : (<TouchableOpacity
+        style={styles.nextDisable}
+      >
+        <Text style={styles.nextText}>Next</Text>
+      </TouchableOpacity>)}
+    </View>
+  );
 }
+
 
 const styles = StyleSheet.create({
   container: {
