@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="268px" height="225px" viewBox="0 0 268 225" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>illustration-laptop-audiogram-white</title>
+    <defs>
+        <linearGradient x1="50%" y1="7.09090909%" x2="50%" y2="54.1818182%" id="linearGradient-1">
+            <stop stop-color="#000000" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.05" offset="65.8723219%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-9.9%" y="-15.6%" width="119.9%" height="131.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="6.22544372" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-3.2%" y="-45.2%" width="106.4%" height="190.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="2.0547281" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-5.6%" y="-106.8%" width="111.2%" height="313.6%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="3.42454683" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <path d="M18.8970879,5.33288909 C18.8970879,2.38761577 21.2859462,0 24.2405501,0 L212.366739,0 C215.317851,0 217.710201,2.39297656 217.710201,5.33288909 L217.710201,124.530097 C217.710201,127.475371 215.321342,129.862986 212.366739,129.862986 L24.2405501,129.862986 C21.2894374,129.862986 18.8970879,127.47001 18.8970879,124.530097 L18.8970879,5.33288909 Z" id="path-5"></path>
+        <filter x="-26.9%" y="-39.7%" width="153.8%" height="182.4%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="17.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-17.9%" y="-25.8%" width="135.7%" height="154.7%" filterUnits="objectBoundingBox" id="filter-7">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-8">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#CDCBD5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-9" x="0" y="0" width="184.575575" height="116.239739"></rect>
+    </defs>
+    <g id="illustration-laptop-audiogram-white" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Macbook" transform="translate(16.000000, 33.000000)">
+            <g id="shadows" transform="translate(22.600002, 121.400014)">
+                <path d="M188.742595,4.20808228 L169.718982,119.220307 C168.937329,122.53609 20.6033692,122.53442 19.8221105,119.220307 L0.798497143,4.20808228 C0.0168445933,0.892298325 189.523854,0.893969005 188.742595,4.20808228 Z" id="shadow" fill="url(#linearGradient-1)" opacity="0.5" filter="url(#filter-2)"></path>
+                <rect id="Rectangle-8" fill="#000000" opacity="0.05" filter="url(#filter-3)" x="0.0513016806" y="0.0529701396" width="192.535207" height="13.6257539" rx="6.81287697"></rect>
+                <rect id="Rectangle-2" fill="#000000" opacity="0.5" filter="url(#filter-4)" x="5.13016806" y="0.128262548" width="183.916525" height="9.61969106" rx="4.80984553"></rect>
+            </g>
+            <g id="case" transform="translate(0.000000, 0.000003)">
+                <g id="screen">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-5"></use>
+                </g>
+                <rect id="front" fill="#FFFFFF" x="0" y="128.682414" width="236.213599" height="1.5740968"></rect>
+                <path d="M11.7665966,135.011387 C5.14762299,135.011387 1.47793959e-11,134.448591 1.30739863e-12,129.970236 L1.30739863e-12,129.970236 L0.140304579,129.970109 C0.186756771,129.970067 0.244585009,129.970015 0.313552294,129.969952 L1.22861307,129.969124 C12.7241085,129.95872 101.34541,129.878513 116.346624,129.864936 L117.271876,129.864098 C117.405544,129.863977 117.528785,129.863866 117.64136,129.863764 L118.500489,129.862986 L118.500489,129.970236 L118.639861,129.970109 C118.686005,129.970067 118.743449,129.970015 118.811958,129.969952 L119.720938,129.969124 C131.140052,129.95872 219.172508,129.878513 234.074046,129.864936 L234.99315,129.864098 C235.12593,129.863977 235.248352,129.863866 235.360179,129.863764 L236.213599,129.862986 L236.213599,129.862986 C236.213598,134.855375 231.056995,135.006659 223.165958,135.011244 Z" id="bottom" fill="url(#linearGradient-8)"></path>
+            </g>
+            <g id="Screen" transform="translate(26.000002, 6.800004)">
+                <mask id="mask-10" fill="white">
+                    <use xlink:href="#path-9"></use>
+                </mask>
+                <use id="Mask" fill="#F5F5F5" opacity="0.480073475" xlink:href="#path-9"></use>
+                <path d="M-25.7109915,69.96898 C-6.97724786,69.96898 -6.55407399,50.7513077 11.9493007,50.7513077 C30.4526753,50.7513077 30.5219414,92.382624 49.6962622,92.382624 C68.8705831,92.382624 68.191311,36.7940538 87.4786023,37.2390186 C106.765894,37.6839834 106.369772,71.3866771 125.260942,71.3866771 C144.152112,71.3866771 143.927605,49.3772142 163.043282,49.3772142 C182.158959,49.3772142 182.158959,64.4557133 210.337201,64.4557133" id="Path-3-Copy" stroke="#EE0B77" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-10)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
