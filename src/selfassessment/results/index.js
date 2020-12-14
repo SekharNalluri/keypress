@@ -30,8 +30,6 @@ export default (props) => {
                     Please click next.
                 </Text>
 
-
-
                 <NextPreviousButtons
                     enableButton={true}
                     onPreviousPress={() => {

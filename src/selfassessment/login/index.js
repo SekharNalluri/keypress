@@ -32,7 +32,7 @@ export default (props) => {
                 <TouchableOpacity
                     style={styles.button}
                     onPress={() => {
-                        startSession()
+                        navigation.navigate('Score');
                     }}
                 >
                     <Text style={styles.buttonText}>Sign-in</Text>
@@ -47,7 +47,7 @@ export default (props) => {
                 <TouchableOpacity
                     style={styles.button}
                     onPress={() => {
-                        startSession()
+                        navigation.navigate('Score');
                     }}
                 >
                     <Text style={styles.buttonText}>Create an account</Text>

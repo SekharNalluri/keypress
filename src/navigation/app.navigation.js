@@ -13,6 +13,7 @@ import BestEar from './../selfassessment/bestear'
 import HearingTest from '../selfassessment/hearingtest'
 import SelfResults from '../selfassessment/results'
 import Login from '../selfassessment/login'
+import Score from '../selfassessment/score'
 import UploadHearingTestScreen from './../uploadHearingTest/index'
 import uploadAcknowledge from './../uploadAcknowledge/index'
 
@@ -31,6 +32,7 @@ export default () => {
       <Stack.Screen name="HearingTest" component={HearingTest} options={{ headerShown: false }} />
       <Stack.Screen name="SelfResults" component={SelfResults} options={{ headerShown: false }} />
       <Stack.Screen name="Login" component={Login} options={{ headerShown: false }} />
+      <Stack.Screen name="Score" component={Score} options={{ headerShown: false }} />
       <Stack.Screen name="Session" component={Session} />
       <Stack.Screen name="Terms" component={Terms} />
       <Stack.Screen name="WizardScreen" component={WizardScreen} />
