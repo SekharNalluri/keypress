@@ -3,7 +3,7 @@ import {
     View, Text, ScrollView, TouchableOpacity, Image
 } from "react-native";
 import LinearGradient from 'react-native-linear-gradient';
-import { Images } from '../config/Images';
+// import { Images } from '../config/Images';
 import { SvgUri } from 'react-native-svg';
 import ImagePicker from 'react-native-image-picker';
 import File from 'react-native-vector-icons/AntDesign'
@@ -15,8 +15,8 @@ export default class UploadHearingTestScreen extends Component {
         super(props);
         this.state = {
             myFilename: '',
-            myFileBase64:'',
-            showandhidemodal:false
+            myFileBase64: '',
+            showandhidemodal: false
         };
     }
     componentDidMount() {
@@ -40,7 +40,7 @@ export default class UploadHearingTestScreen extends Component {
          */
         // Open Image Library:
         ImagePicker.launchImageLibrary(options, (response) => {
-            this.setState({myFilename:response.origURL,myFileBase64:response.data})
+            this.setState({ myFilename: response.origURL, myFileBase64: response.data })
 
             //console.log('MyImage ==>'+JSON.stringify(response));
 
@@ -48,43 +48,43 @@ export default class UploadHearingTestScreen extends Component {
         });
     }
 
-    gup( name, url ) {
+    gup(name, url) {
         if (!url) url = location.href;
-        name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
-        var regexS = "[\\?&]"+name+"=([^&#]*)";
-        var regex = new RegExp( regexS );
-        var results = regex.exec( url );
+        name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+        var regexS = "[\\?&]" + name + "=([^&#]*)";
+        var regex = new RegExp(regexS);
+        var results = regex.exec(url);
         return results == null ? null : results[1];
     }
 
     render() {
         const { navigation } = this.props;
 
-        const { myFilename ,showandhidemodal,myFileBase64} = this.state
+        const { myFilename, showandhidemodal, myFileBase64 } = this.state
 
         return (
             <View style={{ flex: 1 }}>
-                 <Modal isVisible={showandhidemodal} style={{}}>
-                    <View style={{width:'90%',height:'30%',backgroundColor:'white',alignSelf:'center'}}>
-                    
-                      <Image style={{width:'100%',height:'100%'}} source={{
-                          uri: `data:image/jpeg;base64,${this.state.myFileBase64}`,
+                <Modal isVisible={showandhidemodal} style={{}}>
+                    <View style={{ width: '90%', height: '30%', backgroundColor: 'white', alignSelf: 'center' }}>
+
+                        <Image style={{ width: '100%', height: '100%' }} source={{
+                            uri: `data:image/jpeg;base64,${this.state.myFileBase64}`,
                         }}>
-                      </Image>
-                      <TouchableOpacity 
-                       onPress={()=>{
-                           this.setState({showandhidemodal:false})
-                       }}
-                      style={{width:30,height:30,borderRadius:15,backgroundColor:'red',position:'absolute',right:-5,top:-5,justifyContent:'center',alignItems:'center'}}>
-                      
-                      <File
-                                    name={'close'}
-                                    color={'#ffffff'}
-                                    size={25}
-                                >
-                                </File>
-                      </TouchableOpacity>
-                    </View> 
+                        </Image>
+                        <TouchableOpacity
+                            onPress={() => {
+                                this.setState({ showandhidemodal: false })
+                            }}
+                            style={{ width: 30, height: 30, borderRadius: 15, backgroundColor: 'red', position: 'absolute', right: -5, top: -5, justifyContent: 'center', alignItems: 'center' }}>
+
+                            <File
+                                name={'close'}
+                                color={'#ffffff'}
+                                size={25}
+                            >
+                            </File>
+                        </TouchableOpacity>
+                    </View>
                 </Modal>
                 <ScrollView contentContainerStyle={{ alignItems: "center", padding: 10, width: "100%", paddingTop: 100 }}>
                     <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
@@ -116,9 +116,9 @@ export default class UploadHearingTestScreen extends Component {
                             uri='https://onlineassessmentwebapp-development1.azurewebsites.net//Assets/Images/illustration-laptop-audiogram-white.svg'
                         />
                     </View>
-                    
-                    {myFilename != ''?( <View style={{width:'100%'}}>
-                        <View style={{ width: '90%', alignSelf: 'center', backgroundColor: '#cdcdcd', marginTop: 20, borderRadius: 10, flexDirection: 'row' ,padding:10}}>
+
+                    {myFilename != '' ? (<View style={{ width: '100%' }}>
+                        <View style={{ width: '90%', alignSelf: 'center', backgroundColor: '#cdcdcd', marginTop: 20, borderRadius: 10, flexDirection: 'row', padding: 10 }}>
                             <View style={{ flex: 0.5, justifyContent: 'center', alignItems: 'center' }}>
                                 <File
                                     name={'file1'}
@@ -128,19 +128,19 @@ export default class UploadHearingTestScreen extends Component {
                                 </File>
                             </View>
                             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                                <Text style={{ fontFamily: 'ModernEra-Black', fontSize: 18, alignSelf: 'flex-start', textAlign: 'left', }}>{this.gup('id',myFilename)}</Text>
-                                <TouchableOpacity 
-                                   onPress={()=>{
-                                       this.setState({showandhidemodal:true})
-                                   }}
-                                   style={{ alignItems: 'flex-start', justifyContent: 'flex-start', alignSelf: 'flex-start' }}>
+                                <Text style={{ fontFamily: 'ModernEra-Black', fontSize: 18, alignSelf: 'flex-start', textAlign: 'left', }}>{this.gup('id', myFilename)}</Text>
+                                <TouchableOpacity
+                                    onPress={() => {
+                                        this.setState({ showandhidemodal: true })
+                                    }}
+                                    style={{ alignItems: 'flex-start', justifyContent: 'flex-start', alignSelf: 'flex-start' }}>
                                     <Text style={{ fontFamily: 'ModernEra-Black', fontSize: 18, alignSelf: 'flex-start', textAlign: 'left', textDecorationLine: 'underline', color: '#105BE3' }}>Review Upload</Text>
                                 </TouchableOpacity>
                             </View>
                             <View style={{ flex: 0.5, justifyContent: 'center', alignItems: 'center' }}>
                                 <File
-                                    onPress={()=>{
-                                        this.setState({myFilename:'',myFileBase64:''})
+                                    onPress={() => {
+                                        this.setState({ myFilename: '', myFileBase64: '' })
                                     }}
                                     name={'delete'}
                                     color={'#031933'}
@@ -156,8 +156,8 @@ export default class UploadHearingTestScreen extends Component {
                             style={{ width: '80%', height: '15%', backgroundColor: '#105BE4', marginTop: 30, marginBottom: 100, borderRadius: 10, justifyContent: 'center', alignItems: 'center', alignSelf: 'center' }}>
                             <Text style={{ fontFamily: 'ModernEra-Black', color: '#fff', fontSize: 17 }}>Submit files</Text>
                         </TouchableOpacity>
-                    </View>):(null)}
-                    
+                    </View>) : (null)}
+
                 </ScrollView>
             </View>
         );

@@ -1,0 +1,72 @@
+[
+    {
+        "title": "Premium fidelity",
+        "SB1": "Channels: 32\nBands: 16",
+        "SBPro": "Channels: 48\nBands: 20"
+    },
+    {
+        "title": "eWindScreen Binaural ",
+        "SB1": "Manual",
+        "SBPro": "Automatic"
+    },
+    {
+        "title": "Spatial SpeechFocus ",
+        "SB1": "Front, Back, Omni",
+        "SBPro": "Front, Back, Left, Right"
+    },
+    {
+        "title": "EchoShield",
+        "SB1": "hifen",
+        "SBPro": "Tick"
+    },
+    {
+        "title": "Color choices",
+        "SB1": "colorLayout",
+        "SBPro": "colorLayout"
+    },
+    {
+        "title": "Dust and Water resistant",
+        "SB1": "IP68",
+        "SBPro": "IP68"
+    },
+    {
+        "title": "Smartphone app",
+        "SB1": "Tick",
+        "SBPro": "Tick"
+    },
+    {
+        "title": "App-controlled directional hearing focus",
+        "SB1": "Tick",
+        "SBPro": "Tick"
+    },
+    {
+        "title": "Ultra HD e2e processing (Directionality)",
+        "SB1": "Tick",
+        "SBPro": "Tick"
+    },
+    {
+        "title": "TwinPhone",
+        "SB1": "Tick",
+        "SBPro": "Tick"
+    },
+    {
+        "title": "Tinnitus Masker",
+        "SB1": "Tick",
+        "SBPro": "Tick"
+    },
+    {
+        "title": "Own Voice Processing",
+        "SB1": "Tick",
+        "SBPro": "Tick"
+    },
+    {
+        "title": "Dynamic Soundscape Processing",
+        "SB1": "Tick",
+        "SBPro": "Tick"
+    },
+    {
+        "title": "Discreet and barely visible",
+        "SB1": "Tick",
+        "SBPro": "Tick"
+    }
+]

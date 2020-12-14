@@ -14,8 +14,10 @@ import HearingTest from '../selfassessment/hearingtest'
 import SelfResults from '../selfassessment/results'
 import Login from '../selfassessment/login'
 import Score from '../selfassessment/score'
-import UploadHearingTestScreen from './../uploadHearingTest/index'
-import uploadAcknowledge from './../uploadAcknowledge/index'
+import UploadHearingTestScreen from '../selfassessment/upload/uploadHearingTest'
+import uploadAcknowledge from '../selfassessment/upload/uploadAcknowledge'
+import ModalSelection from '../selfassessment/ModelSelection';
+import CartScreen from '../selfassessment/cartScreen'
 
 
 enableScreens();
@@ -39,8 +41,8 @@ export default () => {
       <Stack.Screen name="Questionnaire" component={QuestionnaireNav} />
       <Stack.Screen name="UploadHearingTestScreen" component={UploadHearingTestScreen} options={{ headerShown: false }} />
       <Stack.Screen name="uploadAcknowledge" component={uploadAcknowledge} options={{ headerShown: false }} />
-
-
+      <Stack.Screen name="ModalSelection" component={ModalSelection} options={{ headerShown: false }} />
+      <Stack.Screen name="CartScreen" component={CartScreen} options={{ headerShown: false }} />
     </Stack.Navigator>
   );
 };

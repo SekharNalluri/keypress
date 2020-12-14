@@ -96,7 +96,7 @@ export default (props) => {
                             <TouchableOpacity onPress={() => setView(view + 1)}>
                                 <View style={styles.nextView}>
                                     <Text style={styles.nextText}>
-                                        {'more '}<Icon name={'chevron-thin-right'} size={20} />
+                                        {'next '}<Icon name={'chevron-thin-right'} size={20} />
                                     </Text>
                                 </View>
                             </TouchableOpacity>
@@ -120,7 +120,7 @@ export default (props) => {
                             <TouchableOpacity onPress={() => setView(view + 1)}>
                                 <View style={styles.nextView}>
                                     <Text style={styles.nextText}>
-                                        {'more '}<Icon name={'chevron-thin-right'} size={20} />
+                                        {'next '}<Icon name={'chevron-thin-right'} size={20} />
                                     </Text>
                                 </View>
                             </TouchableOpacity>
@@ -143,7 +143,7 @@ export default (props) => {
                             <TouchableOpacity onPress={() => setView(view + 1)}>
                                 <View style={styles.nextView}>
                                     <Text style={styles.nextText}>
-                                        {'more '}<Icon name={'chevron-thin-right'} size={20} />
+                                        {'next '}<Icon name={'chevron-thin-right'} size={20} />
                                     </Text>
                                 </View>
                             </TouchableOpacity>
@@ -158,34 +158,62 @@ export default (props) => {
             {
                 view == 4 && (<View style={styles.container}>
                     <ScrollView contentContainerStyle={styles.scrollView} style={{ flex: 1 }}>
-                        <View style={styles.header}>
-                            <Line />
-                            <Text style={styles.text}>{`${name}, ${HearText[score].scoreTitleGreetings}`}</Text>
-                            <Text style={styles.headScore}>{HearText[score].scoreTitle}</Text>
-                        </View>
-
-                        <View style={styles.scoreView}>
-                            <ImageBackground
-                                style={styles.scoreCard}
-                                source={{ uri: `https://onlineassessmentwebapp-development1.azurewebsites.net//Assets/Images/res-hs-vis-${score}.png` }}>
-                                <Text style={styles.score}><Text style={styles.mainScore}>{score}</Text>/10</Text>
-                                <Text style={styles.scoreHelp}>10 being the best </Text>
-                            </ImageBackground>
-                        </View>
-
-                        <View style={styles.hearTextView}>
-                            {renderHearText(HearText[score].youHear)}
-                        </View >
+                        <Text style="centerText">Fortunately, with hearing aids, you could improve your HearScore to 9 which means: WIP</Text>
 
                         <View style={styles.next}>
-                            <TouchableOpacity onPress={() => navigation.navigate('DemoVideo')}>
+                            <TouchableOpacity onPress={() => setView(view + 1)}>
                                 <View style={styles.nextView}>
                                     <Text style={styles.nextText}>
-                                        {'more '}<Icon name={'chevron-thin-right'} size={20} />
+                                        {'next '}<Icon name={'chevron-thin-right'} size={20} />
                                     </Text>
                                 </View>
                             </TouchableOpacity>
                         </View>
+
+
+                    </ScrollView>
+
+                </View>)
+            }
+            {
+                view == 5 && (<View style={styles.container}>
+                    <ScrollView contentContainerStyle={styles.scrollView} style={{ flex: 1 }}>
+                        <Text style="centerText">You’re not alone! WIP</Text>
+
+                        <View style={styles.next}>
+                            <TouchableOpacity onPress={() => setView(view + 1)}>
+                                <View style={styles.nextView}>
+                                    <Text style={styles.nextText}>
+                                        {'next '}<Icon name={'chevron-thin-right'} size={20} />
+                                    </Text>
+                                </View>
+                            </TouchableOpacity>
+                        </View>
+
+
+                    </ScrollView>
+
+                </View>)
+            }
+            {
+                view == 6 && (<View style={styles.container}>
+                    <ScrollView contentContainerStyle={styles.scrollView} style={{ flex: 1 }}>
+
+                        <TouchableOpacity onPress={() => navigation.navigate('ModalSelection')}>
+                            <View style={styles.nextView}>
+                                <Text style={styles.nextText}>
+                                    {'Select devices '}<Icon name={'chevron-thin-right'} size={20} />
+                                </Text>
+                            </View>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity onPress={() => navigation.navigate('ModalSelection')}>
+                            <View style={styles.nextView}>
+                                <Text style={styles.nextText}>
+                                    {'Schedule a Pro-Led Assessment '}<Icon name={'chevron-thin-right'} size={20} />
+                                </Text>
+                            </View>
+                        </TouchableOpacity>
 
 
                     </ScrollView>
@@ -296,6 +324,11 @@ const styles = StyleSheet.create({
         fontSize: 18,
         marginVertical: 10,
         textAlign: 'center'
+    },
+    centerText: {
+        fontSize: 18,
+        justifyContent: 'center',
+        alignContent: 'center'
     }
 });
 

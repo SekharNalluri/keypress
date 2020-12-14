@@ -54,18 +54,6 @@ export default (props) => {
             <ScrollView contentContainerStyle={styles.scrollContainer}>
                 <Line />
                 <Text style={styles.header}>Now, let’s calibrate your volume.</Text>
-                <Text style={styles.paragraphText}>
-                    Step 1: Without your headphones on, rub your hands together, quickly and firmly, directly in front of your nose as shown in the video to the right.
-                    </Text>
-                <Text style={styles.paragraphText}>
-                    Step 2: Then, put your headphones on. Press the “Play sound <Icon name={'play'} size={15} />” button.
-                    </Text>
-                <Text style={styles.paragraphText}>
-                    Step 3: Adjust your computer’s volume up or down so that the level of the two sounds (the computer sound through your headphones and your hands swishing with no headphones on) is the same.
-                    </Text>
-                <Text style={styles.paragraphText}>
-                    Repeat steps 1-3 until the sounds levels match. Once matched, do not change your volume for the remainder of the hearing assessment.
-                    </Text>
                 <LinearGradient colors={['#ED3D68', '#ED3A4E', '#ED3D39', '#EE5235']}
                     style={styles.gradient}>
                     <SvgUri
@@ -98,6 +86,19 @@ export default (props) => {
                             (<Text style={styles.buttonText}>Play Sound <Icon name={'play'} size={18} color="#fff" /></Text>)}
                     </TouchableOpacity>
                 </LinearGradient>
+
+                <Text style={styles.paragraphText}>
+                    Step 1: Without your headphones on, rub your hands together, quickly and firmly, directly in front of your nose as shown in the video to the right.
+                    </Text>
+                <Text style={styles.paragraphText}>
+                    Step 2: Then, put your headphones on. Press the “Play sound <Icon name={'play'} size={15} />” button.
+                    </Text>
+                <Text style={styles.paragraphText}>
+                    Step 3: Adjust your computer’s volume up or down so that the level of the two sounds (the computer sound through your headphones and your hands swishing with no headphones on) is the same.
+                    </Text>
+                <Text style={styles.paragraphText}>
+                    Repeat steps 1-3 until the sounds levels match. Once matched, do not change your volume for the remainder of the hearing assessment.
+                    </Text>
             </ScrollView>
             <NextPreviousButtons
                 enableButton={canEnableNext}
