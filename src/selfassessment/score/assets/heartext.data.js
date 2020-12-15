@@ -27,7 +27,9 @@ export const HearText = {
       "Our brains don’t just hear with our ears, we also “hear” with facial cues and lip reading. Face masks can make hearing more difficult for those with any degree of hearing loss."
     ],
     "hearingAids": [
-      "Fortunately, with hearing aids, you could improve your HearScore to 5 which means:",
+      "Fortunately, with hearing aids, ",
+      "you could improve your HearScore to 5",
+      " which means:",
       "This will make it easier to understand speech, especially in one-on-one conversations",
       "It will help improve any feelings of isolation due to hearing loss",
       "You’ll be able to stream your favorite music as well as phone calls",
@@ -36,18 +38,18 @@ export const HearText = {
     "improvedHearScore": "",
     "notAlone": [
       "You’re not alone! ",
-      "Approximately 38 million Americans have some degree of hearing loss ",
-      "50 million Americans experience tinnitus",
-      "Only 25% of people who could benefit from hearing aids, currently have hearing aids"
+      "Approximately ", "38 million Americans", " have some degree of hearing loss ",
+      "50 million Americans", " experience tinnitus",
+      "Only ", "25% of people", " who could benefit from hearing aids, currently have hearing aids"
     ],
     "hearingLoss": "Hearing loss often happens gradually, and your brain learns how to compensate for it so it may take a little while to realize. Fortunately, approximately 80% of hearing losses can be treated successfully with hearing aids.",
     "proLed": [
       "Want to confirm these results?",
-      "Schedule a free, no-pressure provider-led assessment now for a more robust hearing assessment and, if needed, product recommendations based on your individual needs."
+      "Schedule a free, no-pressure provider-led assessment now for a more robust hearing assessment and, if needed, product recommendations based on your individual needs.", "Schedule a Pro-Led Assessment"
     ],
     "betterHearing": [
       "Ready for better hearing?",
-      "Based on your results, it seems like you would benefit from hearing aids. 9 out of 10 hearing aid users report improvements in quality of life."
+      "Based on your results, it seems like you would benefit from hearing aids. 9 out of 10 hearing aid users report improvements in quality of life.", "Select a device"
     ],
     "discliamer": "The HearScore is not a medical diagnosis. Further assessment may be needed to fully evaluate your hearing care needs."
   },
@@ -79,7 +81,9 @@ export const HearText = {
       "Our brains don’t just hear with our ears, we also “hear” with facial cues and lip reading. Face masks can make hearing more difficult for those with any degree of hearing loss. "
     ],
     "hearingAids": [
-      "Fortunately, with hearing aids, you could improve your HearScore to 6 which means: ",
+      "Fortunately, with hearing aids, ",
+      "you could improve your HearScore to 6",
+      "which means: ",
       "You’ll notice that it’s easier to understand lyrics and certain musical instruments",
       "You’ll be able to stream your favorite music as well as phone calls",
       "It will become easier to hear conversations with family and friends",
@@ -88,18 +92,22 @@ export const HearText = {
     "improvedHearScore": "",
     "notAlone": [
       "You’re not alone! ",
-      "Approximately 38 million Americans have some degree of hearing loss ",
-      "50 million Americans experience tinnitus",
-      "Only 25% of people who could benefit from hearing aids, currently have hearing aids"
+      "Approximately ",
+      "38 million Americans",
+      " have some degree of hearing loss ",
+      "50 million Americans", " experience tinnitus",
+      "Only ",
+      "25% of people",
+      " who could benefit from hearing aids, currently have hearing aids"
     ],
     "hearingLoss": "Hearing loss often happens gradually, and your brain learns how to compensate for it so it may take a little while to realize. Fortunately, approximately 80% of hearing losses can be treated successfully with hearing aids.",
     "proLed": [
       "Want to confirm these results?",
-      "Schedule a free, no-pressure provider-led assessment now for a more robust hearing assessment and, if needed, product recommendations based on your individual needs."
+      "Schedule a free, no-pressure provider-led assessment now for a more robust hearing assessment and, if needed, product recommendations based on your individual needs.", "Schedule a Pro-Led Assessment"
     ],
     "betterHearing": [
       "Ready for better hearing?",
-      "Based on your results, it seems like you would benefit from hearing aids. 9 out of 10 hearing aid users report improvements in quality of life."
+      "Based on your results, it seems like you would benefit from hearing aids. 9 out of 10 hearing aid users report improvements in quality of life.", "Select a device"
     ],
     "discliamer": "The HearScore is not a medical diagnosis. Further assessment may be needed to fully evaluate your hearing care needs."
   },
@@ -132,7 +140,9 @@ export const HearText = {
       "Our brains don’t just hear with our ears, we also “hear” with facial cues and lip reading. Face masks can make hearing more difficult for those with any degree of hearing loss. "
     ],
     "hearingAids": [
-      "Fortunately, with hearing aids, you could improve your HearScore to 7 which means:",
+      "Fortunately, with hearing aids, ",
+      "you could improve your HearScore to 7",
+      " which means:",
       "You’ll be able to rejoin family and friends in social gatherings and take part in conversations ",
       "You’ll be able to stream your favorite music as well as phone calls",
       "You may notice that listening is less stressful"
@@ -140,18 +150,18 @@ export const HearText = {
     "improvedHearScore": "",
     "notAlone": [
       "You’re not alone! ",
-      "Approximately 38 million Americans have some degree of hearing loss ",
-      "50 million Americans experience tinnitus",
-      "Only 25% of people who could benefit from hearing aids, currently have hearing aids"
+      "Approximately ", "38 million Americans", " have some degree of hearing loss ",
+      "50 million Americans", " experience tinnitus",
+      "Only ", "25% of people", " who could benefit from hearing aids, currently have hearing aids"
     ],
     "hearingLoss": "Hearing loss often happens gradually, and your brain learns how to compensate for it so it may take a little while to realize. Fortunately, approximately 80% of hearing losses can be treated successfully with hearing aids.",
     "proLed": [
       "Want to confirm these results?",
-      "Schedule a free, no-pressure provider-led assessment now for a more robust hearing assessment and, if needed, product recommendations based on your individual needs."
+      "Schedule a free, no-pressure provider-led assessment now for a more robust hearing assessment and, if needed, product recommendations based on your individual needs.", "Schedule a Pro-Led Assessment"
     ],
     "betterHearing": [
       "Ready for better hearing?",
-      "Based on your results, it seems like you would benefit from hearing aids. 9 out of 10 hearing aid users report improvements in quality of life."
+      "Based on your results, it seems like you would benefit from hearing aids. 9 out of 10 hearing aid users report improvements in quality of life.", "Select a device"
     ],
     "discliamer": "The HearScore is not a medical diagnosis. Further assessment may be needed to fully evaluate your hearing care needs."
   },
@@ -183,7 +193,9 @@ export const HearText = {
       "Our brains don’t just hear with our ears, we also “hear” with facial cues and lip reading. Face masks can make hearing more difficult for those with any degree of hearing loss. "
     ],
     "hearingAids": [
-      "Fortunately, with hearing aids, you could improve your HearScore to 8 which means:",
+      "Fortunately, with hearing aids, ",
+      "you could improve your HearScore to 8",
+      " which means:",
       "Family and friends will not have to physically contact you in order to get your attention",
       "You’ll have an easier time understanding the voices of women and children. ",
       "You’ll be able to stream your favorite music as well as phone calls",
@@ -192,18 +204,18 @@ export const HearText = {
     "improvedHearScore": "",
     "notAlone": [
       "You’re not alone! ",
-      "Approximately 38 million Americans have some degree of hearing loss ",
-      "50 million Americans experience tinnitus",
-      "Only 25% of people who could benefit from hearing aids, currently have hearing aids"
+      "Approximately ", "38 million Americans", " have some degree of hearing loss ",
+      "50 million Americans", " experience tinnitus",
+      "Only ", "25% of people", " who could benefit from hearing aids, currently have hearing aids"
     ],
     "hearingLoss": "Hearing loss often happens gradually, and your brain learns how to compensate for it so it may take a little while to realize. Fortunately, approximately 80% of hearing losses can be treated successfully with hearing aids.",
     "proLed": [
       "Want to confirm these results?",
-      "Schedule a free, no-pressure provider-led assessment now for a more robust hearing assessment and, if needed, product recommendations based on your individual needs."
+      "Schedule a free, no-pressure provider-led assessment now for a more robust hearing assessment and, if needed, product recommendations based on your individual needs.", "Schedule a Pro-Led Assessment"
     ],
     "betterHearing": [
       "Ready for better hearing?",
-      "Based on your results, it seems like you would benefit from hearing aids. 9 out of 10 hearing aid users report improvements in quality of life."
+      "Based on your results, it seems like you would benefit from hearing aids. 9 out of 10 hearing aid users report improvements in quality of life.", "Select a device"
     ],
     "discliamer": "The HearScore is not a medical diagnosis. Further assessment may be needed to fully evaluate your hearing care needs."
   },
@@ -235,7 +247,9 @@ export const HearText = {
       "Our brains don’t just hear with our ears, we also “hear” with facial cues and lip reading. Face masks can make hearing more difficult for those with any degree of hearing loss. "
     ],
     "hearingAids": [
-      "Fortunately, with hearing aids, you could improve your HearScore to 9 which means:",
+      "Fortunately, with hearing aids, ",
+      "you could improve your HearScore to 9",
+      " which means:",
       "You’ll notice an improvement with understanding speech on the phone and on the television",
       "You’ll be able to stream your favorite music as well as phone calls",
       "It will become easier to hear conversations with family and friends",
@@ -244,18 +258,18 @@ export const HearText = {
     "improvedHearScore": "",
     "notAlone": [
       "You’re not alone! ",
-      "Approximately 38 million Americans have some degree of hearing loss ",
-      "50 million Americans experience tinnitus",
-      "Only 25% of people who could benefit from hearing aids, currently have hearing aids"
+      "Approximately ", "38 million Americans", " have some degree of hearing loss ",
+      "50 million Americans", " experience tinnitus",
+      "Only ", "25% of people", " who could benefit from hearing aids, currently have hearing aids"
     ],
     "hearingLoss": "Hearing loss often happens gradually, and your brain learns how to compensate for it so it may take a little while to realize. Fortunately, approximately 80% of hearing losses can be treated successfully with hearing aids.",
     "proLed": [
       "Want to confirm these results?",
-      "Schedule a free, no-pressure provider-led assessment now for a more robust hearing assessment and, if needed, product recommendations based on your individual needs."
+      "Schedule a free, no-pressure provider-led assessment now for a more robust hearing assessment and, if needed, product recommendations based on your individual needs.", "Schedule a Pro-Led Assessment"
     ],
     "betterHearing": [
       "Ready for better hearing?",
-      "Based on your results, it seems like you would benefit from hearing aids. 9 out of 10 hearing aid users report improvements in quality of life."
+      "Based on your results, it seems like you would benefit from hearing aids. 9 out of 10 hearing aid users report improvements in quality of life.", "Select a device"
     ],
     "discliamer": "The HearScore is not a medical diagnosis. Further assessment may be needed to fully evaluate your hearing care needs."
   },
@@ -287,7 +301,9 @@ export const HearText = {
       "Our brains don’t just hear with our ears, we also “hear” with facial cues and lip reading. Face masks can make hearing more difficult for those with any degree of hearing loss. "
     ],
     "hearingAids": [
-      "Fortunately, with hearing aids, you could improve your HearScore to 9 or 10 which means:",
+      "Fortunately, with hearing aids, ",
+      "you could improve your HearScore to 9 or 10 ",
+      " which means:",
       "Speech would become easier to understand in one-on-one situations as well as in noisy environments",
       "You’ll be able to stream your favorite music as well as phone calls",
       "You may notice that listening is less stressful"
@@ -295,18 +311,18 @@ export const HearText = {
     "improvedHearScore": "",
     "notAlone": [
       "You’re not alone!",
-      "Approximately 38 million Americans have some degree of hearing loss ",
-      "50 million Americans experience tinnitus",
-      "Only 25% of people who could benefit from hearing aids, currently have hearing aids"
+      "Approximately ", "38 million Americans", " have some degree of hearing loss ",
+      "50 million Americans", " experience tinnitus",
+      "Only ", "25% of people", " who could benefit from hearing aids, currently have hearing aids"
     ],
     "hearingLoss": "Hearing loss often happens gradually, and your brain learns how to compensate for it so it may take a little while to realize. Fortunately, approximately 80% of hearing losses can be treated successfully with hearing aids.",
     "proLed": [
       "Want to confirm these results?",
-      "Schedule a free, no-pressure provider-led assessment now for a more robust hearing assessment and, if needed, product recommendations based on your individual needs."
+      "Schedule a free, no-pressure provider-led assessment now for a more robust hearing assessment and, if needed, product recommendations based on your individual needs.", "Schedule a Pro-Led Assessment"
     ],
     "betterHearing": [
       "Ready for better hearing?",
-      "Based on your results, it seems like you would benefit from hearing aids. 9 out of 10 hearing aid users report improvements in quality of life."
+      "Based on your results, it seems like you would benefit from hearing aids. 9 out of 10 hearing aid users report improvements in quality of life.", "Select a device"
     ],
     "discliamer": "The HearScore is not a medical diagnosis. Further assessment may be needed to fully evaluate your hearing care needs."
   },
@@ -338,7 +354,9 @@ export const HearText = {
       "Our brains don’t just hear with our ears, we also “hear” with facial cues and lip reading. Face masks can make hearing more difficult for those with any degree of hearing loss. "
     ],
     "hearingAids": [
-      "Fortunately, with hearing aids, you could improve your HearScore to 9 or 10 which means:",
+      "Fortunately, with hearing aids, ",
+      "you could improve your HearScore to 9 or 10 ",
+      " which means:",
       "You’ll notice an improvement in understanding speech in noisy environments as well as on the television ",
       "You’ll be able to stream your favorite music as well as phone calls",
       "It will become easier to hear conversations with family and friends",
@@ -347,18 +365,18 @@ export const HearText = {
     "improvedHearScore": "",
     "notAlone": [
       "You’re not alone! ",
-      "Approximately 38 million Americans have some degree of hearing loss ",
-      "50 million Americans experience tinnitus",
-      "Only 25% of people who could benefit from hearing aids, currently have hearing aids"
+      "Approximately ", "38 million Americans", " have some degree of hearing loss ",
+      "50 million Americans", " experience tinnitus",
+      "Only ", "25% of people", " who could benefit from hearing aids, currently have hearing aids"
     ],
     "hearingLoss": "Hearing loss often happens gradually, and your brain learns how to compensate for it so it may take a little while to realize. Fortunately, approximately 80% of hearing losses can be treated successfully with hearing aids.",
     "proLed": [
       "Want to confirm these results?",
-      "Schedule a free, no-pressure provider-led assessment now for a more robust hearing assessment and, if needed, product recommendations based on your individual needs."
+      "Schedule a free, no-pressure provider-led assessment now for a more robust hearing assessment and, if needed, product recommendations based on your individual needs.", "Schedule a Pro-Led Assessment"
     ],
     "betterHearing": [
       "Ready for better hearing?",
-      "Based on your results, it seems like you would benefit from hearing aids. 9 out of 10 hearing aid users report improvements in quality of life."
+      "Based on your results, it seems like you would benefit from hearing aids. 9 out of 10 hearing aid users report improvements in quality of life.", "Select a device"
     ],
     "discliamer": "The HearScore is not a medical diagnosis. Further assessment may be needed to fully evaluate your hearing care needs."
   },
@@ -388,7 +406,9 @@ export const HearText = {
       "Our brains don’t just hear with our ears, we also “hear” with facial cues and lip reading. Face masks can make hearing more difficult for those with any degree of hearing loss. "
     ],
     "hearingAids": [
-      "Fortunately, with hearing aids, you could improve your HearScore to 9 or 10 which means:",
+      "Fortunately, with hearing aids, ",
+      "you could improve your HearScore to 9 or 10 ",
+      " which means:",
       "It will become easier to understand speech when there are environmental sounds like in a car or a restaurant",
       "Friends will likely notice that you ask them to repeat themselves less frequently",
       "You’ll be able to stream your favorite music as well as phone calls",
@@ -397,18 +417,18 @@ export const HearText = {
     "improvedHearScore": "",
     "notAlone": [
       "You’re not alone! ",
-      "Approximately 38 million Americans have some degree of hearing loss ",
-      "50 million Americans experience tinnitus",
-      "Only 25% of people who could benefit from hearing aids, currently have hearing aids"
+      "Approximately ", "38 million Americans", " have some degree of hearing loss ",
+      "50 million Americans", " experience tinnitus",
+      "Only ", "25% of people", " who could benefit from hearing aids, currently have hearing aids"
     ],
     "hearingLoss": "Hearing loss often happens gradually, and your brain learns how to compensate for it so it may take a little while to realize. Fortunately, approximately 80% of hearing losses can be treated successfully with hearing aids.",
     "proLed": [
       "Want to confirm these results?",
-      "Schedule a free, no-pressure provider-led assessment now for a more robust hearing assessment and, if needed, product recommendations based on your individual needs."
+      "Schedule a free, no-pressure provider-led assessment now for a more robust hearing assessment and, if needed, product recommendations based on your individual needs.", "Schedule a Pro-Led Assessment"
     ],
     "betterHearing": [
       "Ready for better hearing?",
-      "Based on your results, it seems like you would benefit from hearing aids. 9 out of 10 hearing aid users report improvements in quality of life."
+      "Based on your results, it seems like you would benefit from hearing aids. 9 out of 10 hearing aid users report improvements in quality of life.", "Select a device"
     ],
     "discliamer": "The HearScore is not a medical diagnosis. Further assessment may be needed to fully evaluate your hearing care needs."
   },
@@ -438,24 +458,27 @@ export const HearText = {
       "Our brains don’t just hear with our ears, we also “hear” with facial cues and lip reading. Face masks can make hearing more difficult for those with any degree of hearing loss. "
     ],
     "hearingAids": [
-      "With hearing aids, you could improve your HearScore to 10 which means:",
+      "With hearing aids, ",
+      "you could improve your HearScore to 10 ",
+      " which means:",
       "You’ll notice your ability to understand speech in background noise becomes less difficult",
       "You’ll be able to stream your favorite music as well as phone calls"
     ],
     "improvedHearScore": "",
     "notAlone": [
       "Your hearing is better than most! ",
-      "Approximately 38 million Americans have some degree of hearing loss. ",
-      "Want to confirm these results? Schedule a free, no-pressure provider-led assessment now for a more robust hearing assessment and, if needed, product recommendations based on your individual needs."
+      "Approximately ",
+      "38 million Americans",
+      " have some degree of hearing loss. ",
     ],
     "hearingLoss": "",
     "proLed": [
       "Want to confirm these results?",
-      "Schedule a free, no-pressure provider-led assessment now for a more robust hearing assessment and, if needed, product recommendations based on your individual needs."
+      "Schedule a free, no-pressure provider-led assessment now for a more robust hearing assessment and, if needed, product recommendations based on your individual needs.", "Schedule a Pro-Led Assessment"
     ],
     "betterHearing": [
       "Ready for better hearing?",
-      "Based on your results, it seems like you would benefit from hearing aids. 9 out of 10 hearing aid users report improvements in quality of life."
+      "Based on your results, it seems like you would benefit from hearing aids. 9 out of 10 hearing aid users report improvements in quality of life.", "Select a device"
     ],
     "discliamer": "The HearScore is not a medical diagnosis. Further assessment may be needed to fully evaluate your hearing care needs."
   },
@@ -485,16 +508,16 @@ export const HearText = {
     "improvedHearScore": "",
     "notAlone": [
       "Your hearing is better than most!",
-      "Approximately 38 million Americans have some degree of hearing loss."
+      "Approximately ", "38 million Americans", " have some degree of hearing loss."
     ],
     "hearingLoss": "",
     "proLed": [
       "Want to confirm these results?",
-      "Schedule a free, no-pressure provider-led assessment now for a more robust hearing assessment and, if needed, product recommendations based on your individual needs."
+      "Schedule a free, no-pressure provider-led assessment now for a more robust hearing assessment and, if needed, product recommendations based on your individual needs.", "Schedule a Pro-Led Assessment"
     ],
     "betterHearing": [
       "Ready for better hearing?",
-      "Based on your results, it seems like you would benefit from hearing aids. 9 out of 10 hearing aid users report improvements in quality of life."
+      "Based on your results, it seems like you would benefit from hearing aids. 9 out of 10 hearing aid users report improvements in quality of life.", "Select a device"
     ],
     "discliamer": "The HearScore is not a medical diagnosis. Further assessment may be needed to fully evaluate your hearing care needs."
   }

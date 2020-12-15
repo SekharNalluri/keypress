@@ -12,5 +12,10 @@ export const Images = {
     sb1darkchampagne: require('@assets/images/sb1-dark-champagne.jpg'),
     sb1deepbrown: require('@assets/images/sb1-deep-brown.jpg'),
     sb1gray: require('@assets/images/sb1-gray.jpg'),
+    hearingaid: require('@assets/images/res-icn-hearingaid.jpg'),
+    tinnitus: require('@assets/images/res-icn-tinnitus.jpg'),
+    hearingloss: require('@assets/images/res-icn-hearingloss.jpg')
+
+
 
 }

@@ -13,7 +13,7 @@ import BestEar from './../selfassessment/bestear'
 import HearingTest from '../selfassessment/hearingtest'
 import SelfResults from '../selfassessment/results'
 import Login from '../selfassessment/login'
-import Score from '../selfassessment/score'
+import Score from '../selfassessment/scoresingle'
 import UploadHearingTestScreen from '../selfassessment/upload/uploadHearingTest'
 import uploadAcknowledge from '../selfassessment/upload/uploadAcknowledge'
 import ModalSelection from '../selfassessment/ModelSelection';
