@@ -1,113 +1,115 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
-    View, Text, StyleSheet, TouchableOpacity, ScrollView
+    View, Text, ScrollView, TouchableOpacity, Image, Dimensions, FlatList, TextInput
 } from "react-native";
-import Line from '../common/line'
-import Icon from 'react-native-vector-icons/Entypo';
-import AntIcon from 'react-native-vector-icons/AntDesign';
-import Input from "../common/input";
+
+import Check from 'react-native-vector-icons/FontAwesome'
+import Cross from 'react-native-vector-icons/Entypo'
+import { TextInputMask } from 'react-native-masked-text'
 
 
+let Login = ({ selectedModel, options, sessionInfo, hostname, navigation }) => {
+    const [enableLoginButton, setenableLoginButton] = useState(false)
+    const [email, setemail] = useState('')
+    const [password, setpassword] = useState('')
+    const formatter = new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+        minimumFractionDigits: 2
+    })
 
-export default (props) => {
-    const { navigation } = props;
+    useEffect(() => {
+    }, [selectedModel]);
 
+    let reDirect = (url) => {
+    }
+
+    let save = () => {
+    }
+
+    let onClick = () => {
+        setApprove(!approve);
+    }
     return (
-        <ScrollView style={styles.container}>
-            <View style={styles.innerContainer}>
+        <ScrollView style={{ backgroundColor: 'white' }}>
+            <View style={{ backgroundColor: 'white', flex: 1, paddingTop: 70 }}>
+                {/* <View style={{ flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'flex-start', marginTop: 100, marginLeft: 20 }}>
+                <View style={{ width: 60, height: 8, backgroundColor: '#105BE3', borderRadius: 10, alignSelf: 'flex-start' }}></View>
+                <View style={{ width: 10, height: 8, backgroundColor: '#105BE3', borderRadius: 10, marginLeft: 10, alignSelf: 'flex-start' }}></View>
+            </View> */}
+                <Text style={{ fontFamily: 'ModernEra-Black', fontSize: 35, marginTop: 40, alignSelf: 'flex-start', textAlign: 'center', marginLeft: 20 }}>Sign in to get started</Text>
+                <Text style={{ fontFamily: 'ModernEra-Regular', fontSize: 18, color: '#031931', alignSelf: 'center', textAlign: 'center', marginTop: 10 }}>Before you can purchase,{'\n'}please login or create an account.
+            </Text>
 
-                <Line />
-                {/* <Text style={styles.text}>Sign in to get started</Text>
-                <Text style={styles.clickText}>Before you can purchase, please login or create an account.</Text> */}
+                <View style={{ width: '100%', height: '100%', paddingTop: 0 }}>
+                    <View style={{ flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'flex-start', marginTop: 30, marginLeft: 20 }}>
+                        <View style={{ width: 60, height: 8, backgroundColor: '#105BE3', borderRadius: 10, alignSelf: 'flex-start' }}></View>
+                        <View style={{ width: 10, height: 8, backgroundColor: '#105BE3', borderRadius: 10, marginLeft: 10, alignSelf: 'flex-start' }}></View>
+                    </View>
+                    <Text style={{ fontFamily: 'ModernEra-Black', fontSize: 25, marginTop: 40, alignSelf: 'flex-start', textAlign: 'center', marginLeft: 20 }}>Log in to your Account</Text>
+                    <View style={{ width: '100%', marginTop: 20, justifyContent: 'center', alignItems: 'center', padding: 15 }}>
+                        <Text style={{ fontFamily: 'ModernEra-Black', fontSize: 18, color: '#031931', alignSelf: 'flex-start' }}>Email address</Text>
+                        <TextInput
+                            style={{ width: '100%', height: 50, backgroundColor: '#F5F5F5', alignSelf: 'flex-start', borderRadius: 8, paddingLeft: 10, fontFamily: 'ModernEra-Regular', marginTop: 10, fontSize: 20 }}
+                            value={email}
+                            onChangeText={text => {
+                                setemail(text)
+                            }}
+                        />
+                    </View>
+                    <View style={{ width: '100%', marginTop: 0, justifyContent: 'center', alignItems: 'center', padding: 15 }}>
+                        <Text style={{ fontFamily: 'ModernEra-Black', fontSize: 18, color: '#031931', alignSelf: 'flex-start' }}>Password</Text>
+                        <TextInput
+                            style={{ width: '100%', height: 50, backgroundColor: '#F5F5F5', alignSelf: 'flex-start', borderRadius: 8, paddingLeft: 10, fontFamily: 'ModernEra-Regular', marginTop: 10, fontSize: 20 }}
+                            value={password}
+                            secureTextEntry
+                            onChangeText={text => {
+                                setpassword(text)
+                            }}
+                        />
+                    </View>
 
-                <Text style={styles.text}>Log in to your Account</Text>
+                    {email != '' && password != '' ? (<TouchableOpacity
+                        onPress={() => {
+                            navigation.navigate('Score')
+                        }}
+                        style={{ width: '50%', height: 60, backgroundColor: '#105BE3', justifyContent: 'center', alignItems: 'center', alignSelf: 'center', marginTop: 20, borderRadius: 10, marginBottom: 20 }}>
+                        <Text style={{ fontFamily: 'ModernEra-Black', fontSize: 20, color: 'white' }}>Sign-in</Text>
+                    </TouchableOpacity>) : (<TouchableOpacity
+                        onPress={() => {
+                        }}
+                        style={{ width: '50%', height: 60, backgroundColor: '#6A8DE8', justifyContent: 'center', alignItems: 'center', alignSelf: 'center', marginTop: 20, borderRadius: 10, marginBottom: 20 }}>
+                        <Text style={{ fontFamily: 'ModernEra-Black', fontSize: 20, color: 'white' }}>Sign-in</Text>
+                    </TouchableOpacity>)}
 
-                <Input placeholder={'Email address'} name={'Email address'}>
-                    <Icon name={'check'} size={18} color={"#1013e3"} />
-                </Input>
-                <Input placeholder={'Password'} name={'Password'} password={true} error={'en'}>
-                    <AntIcon name={'exclamationcircleo'} size={18} color={"red"} />
-                </Input>
+                    <View style={{ flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'flex-start', marginTop: 0, marginLeft: 20 }}>
+                        <View style={{ width: 60, height: 8, backgroundColor: '#105BE3', borderRadius: 10, alignSelf: 'flex-start' }}></View>
+                        <View style={{ width: 10, height: 8, backgroundColor: '#105BE3', borderRadius: 10, marginLeft: 10, alignSelf: 'flex-start' }}></View>
+                    </View>
 
-                <TouchableOpacity
-                    style={styles.button}
-                    onPress={() => {
-                        navigation.navigate('Score');
-                    }}
-                >
-                    <Text style={styles.buttonText}>Sign-in</Text>
-                </TouchableOpacity>
+                    <View style={{ paddingLeft: 20, justifyContent: 'flex-start', alignItems: 'flex-start' }}>
+                        <Text style={{ fontFamily: 'ModernEra-Black', fontSize: 25, marginTop: 20, alignSelf: 'flex-start', textAlign: 'center', }}>New to SoundBenefits?</Text>
+                        <Text style={{ fontFamily: 'ModernEra-Regular', fontSize: 18, color: '#031931', marginTop: 10 }}>Here are a few reasons to create an account.</Text>
+                        <Text style={{ fontFamily: 'ModernEra-Black', fontSize: 16, color: '#031931', alignSelf: 'flex-start', textAlign: 'left', marginTop: 10, }}><Check name={'check'} color={'#105BE3'} size={20}></Check> View all your hearing device info in one place.</Text>
+                        <Text style={{ fontFamily: 'ModernEra-Black', fontSize: 16, color: '#031931', alignSelf: 'flex-start', textAlign: 'left', marginTop: 10, }}> <Check name={'check'} color={'#105BE3'} size={20}></Check> Create and manage hearing appointments. </Text>
 
-                <View style={styles.line} />
-                <Line marginTop={40} />
-                <Text style={styles.text}>New to SoundBenefits?</Text>
-                <Text style={styles.clickText}>Here are a few reasons to create an account.</Text>
-                <Text style={styles.clickText}> <Icon name={'check'} size={18} color={"#1013e3"} /> View all your hearing device info in one place.</Text>
-                <Text style={styles.clickText}> <Icon name={'check'} size={18} color={"#1013e3"} /> Create and manage hearing appointments.</Text>
-                <TouchableOpacity
-                    style={styles.button}
-                    onPress={() => {
-                        navigation.navigate('Score');
-                    }}
-                >
-                    <Text style={styles.buttonText}>Create an account</Text>
-                </TouchableOpacity>
+                    </View>
+                    <TouchableOpacity
+                        onPress={() => {
+                            navigation.navigate('Signup')
+                        }}
+                        style={{ width: '50%', height: 60, backgroundColor: '#105BE3', justifyContent: 'center', alignItems: 'center', alignSelf: 'center', marginTop: 20, borderRadius: 10, marginBottom: 20 }}>
+                        <Text style={{ fontFamily: 'ModernEra-Black', fontSize: 20, color: 'white' }}>Create an account</Text>
+                    </TouchableOpacity>
+
+                </View>
+
+
+
             </View>
         </ScrollView>
-    );
+    )
+
 }
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#ffffff',
-    },
-    innerContainer: {
-        flex: 0.95,
-        width: '100%',
-        marginTop: 40,
-        paddingHorizontal: 20
-    },
-    text: {
-        fontFamily: 'ModernEra-Black',
-        fontSize: 25,
-        marginTop: 20,
-        marginBottom: 20
-    },
-    svgView: {
-        alignContent: 'center'
-    },
-    svg: {
-        left: -150
-    },
-    clickText: {
-        fontFamily: 'ModernEra-Black',
-        fontSize: 18,
-        fontWeight: "600",
-        alignSelf: 'center',
-        marginBottom: 10
-    },
-    button: {
-        width: '100%',
-        height: 50,
-        backgroundColor: '#105BE3',
-        borderRadius: 10,
-        alignSelf: 'center',
-        justifyContent: 'center', alignItems: 'center',
-        marginTop: 20
-    },
-    buttonText: {
-        fontFamily: 'LibreFranklin-Black',
-        fontSize: 17,
-        alignSelf: 'center',
-        textAlign: 'center',
-        color: '#ffffff'
-    },
-    line: {
-        marginHorizontal: 10,
-        marginTop: 40,
-        borderBottomColor: '#E3E7EA',
-        borderBottomWidth: 1,
-    }
-});
-
+export default Login;

@@ -16,8 +16,11 @@ import Login from '../selfassessment/login'
 import Score from '../selfassessment/scoresingle'
 import UploadHearingTestScreen from '../selfassessment/upload/uploadHearingTest'
 import uploadAcknowledge from '../selfassessment/upload/uploadAcknowledge'
-import ModalSelection from '../selfassessment/ModelSelection';
+import ModalSelection from '../selfassessment/ModelSelection'
 import CartScreen from '../selfassessment/cartScreen'
+import Checkout from '../selfassessment/checkout'
+import PaymentMore from '../selfassessment/paymentMore'
+import Signup from '../selfassessment/signup'
 
 
 enableScreens();
@@ -43,6 +46,9 @@ export default () => {
       <Stack.Screen name="uploadAcknowledge" component={uploadAcknowledge} options={{ headerShown: false }} />
       <Stack.Screen name="ModalSelection" component={ModalSelection} options={{ headerShown: false }} />
       <Stack.Screen name="CartScreen" component={CartScreen} options={{ headerShown: false }} />
+      <Stack.Screen name="Checkout" component={Checkout} options={{ headerShown: false }} />
+      <Stack.Screen name="PaymentMore" component={PaymentMore} options={{ headerShown: false }} />
+      <Stack.Screen name="Signup" component={Signup} options={{ headerShown: false }} />
     </Stack.Navigator>
   );
 };

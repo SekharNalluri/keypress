@@ -15,7 +15,7 @@ import Cross from 'react-native-vector-icons/Entypo'
 
 
 
-let YourCart = ({ selectedModel, options, sessionInfo, hostname }) => {
+let YourCart = ({ selectedModel, navigation }) => {
 
     let [total, setTotal] = useState(0);
     let [approve, setApprove] = useState(false);
@@ -182,12 +182,13 @@ let YourCart = ({ selectedModel, options, sessionInfo, hostname }) => {
                     </TouchableOpacity>
                 </View>
 
-                {toggleCheckBox ? (<TouchableOpacity style={{ width: '100%', height: '15%', backgroundColor: '#105BE3', justifyContent: 'center', alignItems: 'center', alignSelf: 'center', marginTop: 20, borderRadius: 10 }}>
+                {toggleCheckBox ? (<TouchableOpacity
+                    onPress={() => { navigation.navigate('Checkout') }}
+                    style={{ width: '100%', height: '15%', backgroundColor: '#105BE3', justifyContent: 'center', alignItems: 'center', alignSelf: 'center', marginTop: 20, borderRadius: 10 }}>
                     <Text style={{ fontFamily: 'ModernEra-Black', fontSize: 20, color: 'white' }}>Checkout</Text>
                 </TouchableOpacity>) : (<TouchableOpacity style={{ width: '100%', height: '15%', backgroundColor: '#6A8DE8', justifyContent: 'center', alignItems: 'center', alignSelf: 'center', marginTop: 20, borderRadius: 10 }}>
                     <Text style={{ fontFamily: 'ModernEra-Black', fontSize: 20, color: 'white' }}>Checkout</Text>
                 </TouchableOpacity>)}
-
 
             </View>
 
