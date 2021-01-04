@@ -11,7 +11,7 @@ import Icon from 'react-native-vector-icons/Entypo';
 import { EndPoints } from './../config/Connectors.js';
 import axios from 'axios';
 import Loader from './../Loader/index'
-import {SESSIONID_SELF} from './../config/Connectors.js'
+import { SESSIONID_SELF } from './../config/Connectors.js'
 export default class Home extends Component {
     constructor(props) {
         super(props);
@@ -24,12 +24,12 @@ export default class Home extends Component {
     componentWillUnmount() {
     }
     getConfigAData = () => {
-        const{navigation} = this.props
+        const { navigation } = this.props
         this.setState({ loading: true }, () => {
-            axios.get(EndPoints.GetConfig+'?id='+SESSIONID_SELF).then(response => {
+            axios.get(EndPoints.GetConfig + '?id=' + SESSIONID_SELF).then(response => {
                 this.setState({ loading: false }, () => {
-                    navigation.navigate('SelfAssesment',{
-                        dataForApiC:response
+                    navigation.navigate('SelfAssesment', {
+                        dataForApiC: response.data
                     })
                 })
             })
@@ -37,7 +37,7 @@ export default class Home extends Component {
     }
     render() {
         const { navigation } = this.props;
-        const{loading} = this.state;
+        const { loading } = this.state;
         return (
             <View
                 style={{ flex: 1 }}>

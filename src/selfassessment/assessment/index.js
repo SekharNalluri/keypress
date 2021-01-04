@@ -7,11 +7,12 @@ import axios from 'axios';
 import { EndPoints } from '../../config/Connectors.js'
 import Loader from '../../Loader/index'
 import Line from './../common/line'
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default (props) => {
 
     const { navigation } = props;
-    const routeData = props.route.params.dataForApiC.data;
+    const routeData = props.route.params.dataForApiC;
     const [loading, setLoading] = React.useState(false);
     const paragraphA = [
         'A quiet environment. Avoid sitting near an air conditioning vent or open window if outside sounds may distract you. Turn off all programs on your device that may play notifications.',
@@ -32,8 +33,12 @@ export default (props) => {
             }
         ).then(res => {
             setLoading(false);
-            //console.log('My Session started' + JSON.stringify(res));
-            navigation.navigate('TestHeadphones')
+            try {
+                AsyncStorage.setItem('SESSION_GUID', res.data.sessionGuid);
+            } catch (error) {
+                throw error;
+            }
+            navigation.navigate('TestHeadphones');
         }).catch((err) => {
             setLoading(false);
             console.log("Error while starting session: " + JSON.stringify(err));

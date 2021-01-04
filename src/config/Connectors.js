@@ -1,6 +1,6 @@
 export const SESSIONID = '4fa25fef-d066-4489-b710-1ad031318662'
 export const SESSIONID_SELF = 'FBE034F0-C4E5-4588-AF9D-31EEB84643D4'
-export const Main = 'https://onlinehearingtestwepapp-development.azurewebsites.net/'
+export const Main = 'https://onlineassessmentwebapp-development1.azurewebsites.net/'
 export const EndPoints = {
     connectionProviderURL: Main + '',
     paymentEndpoint: Main + 'Payments/Process/',
@@ -15,8 +15,9 @@ export const EndPoints = {
     GetWaitingRoomContent: Main + 'Sessions/GetWaitingRoomContent',
     GetConfig: Main + 'SelfGuided/GetConfig',
     StartSession: Main + 'SelfGuided/StartSession',
-    GetItemsList: Main + 'SelfGuided/GetItemsList'
-
+    GetItemsList: Main + 'SelfGuided/GetItemsList',
+    SetResults: Main + 'SelfGuided/SetTestResults',
+    PatientSignIn: Main + 'SelfGuided/PatientSignIn',
 
 }
 export default {

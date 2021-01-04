@@ -130,8 +130,8 @@ export default StyleSheet.create({
         marginTop: 50,
         width: 100,
         height: 100,
-        top: 280,
-        left: 40
+        top: 250,
+        left: 10
     },
     yourNotAloneImg: {
         width: 120,

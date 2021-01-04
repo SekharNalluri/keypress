@@ -39,7 +39,7 @@ export default (props) => {
             {
                 text.map((t, i) => {
                     if (i == 0) return <Text style={styles.hearMeaningHeader} key={i}>{t}</Text>
-                    if (i == 1) return <Text style={styles.hearMeaningPara} > {t}</Text>
+                    if (i == 1) return <Text style={styles.hearMeaningPara} key={i} > {t}</Text>
 
                     return (<View style={{ flexDirection: 'row' }} key={i}>
                         <Icon name={'check'} size={18} color={"#1013e3"} />
@@ -175,9 +175,10 @@ export default (props) => {
                 {renderImageText("https://onlineassessmentwebapp-development1.azurewebsites.net//Assets/Images/res-img-mask.jpg", HearText[score].mask)}
 
                 <View style={styles.divider} />
-                <Image style={styles.hearingaidManImage} source={{ uri: "https://onlineassessmentwebapp-development1.azurewebsites.net//Assets/Images/res-img-hearingaid-portrait.jpg" }}></Image>
-
-                <Image style={styles.hearingaidImage} source={{ uri: "https://onlineassessmentwebapp-development1.azurewebsites.net//Assets/Images/sbpro-gray@2x.png" }}></Image>
+                <View>
+                    <Image style={styles.hearingaidManImage} source={{ uri: "https://onlineassessmentwebapp-development1.azurewebsites.net//Assets/Images/res-img-hearingaid-portrait.jpg" }}></Image>
+                    <Image style={styles.hearingaidImage} source={{ uri: "https://onlineassessmentwebapp-development1.azurewebsites.net//Assets/Images/sbpro-gray@2x.png" }}></Image>
+                </View>
 
                 {renderHearingAidsText(HearText[score].hearingAids)}
 

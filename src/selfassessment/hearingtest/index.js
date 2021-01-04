@@ -9,9 +9,13 @@ import NextPreviousButtons from "../nextpreviousbutton/nextpreviousbutton";
 import { ScrollView, TouchableHighlight } from "react-native-gesture-handler";
 import Sound from 'react-native-sound';
 import Cache from '../../config/index';
+import Loader from '../../Loader/index';
+import axios from 'axios';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { EndPoints } from '../../config/Connectors.js'
 
 
-const HearingTest = ({ navigation, hostname, primaryEar, swapLeftRight, binaural, setAssessmentResults, options, setPrimaryEar }) => {
+const HearingTest = ({ navigation, primaryEar, swapLeftRight, binaural, setPrimaryEar }) => {
 
     const config = {
         frequencies: [500, 1000, 2000, 4000, 8000],
@@ -37,6 +41,7 @@ const HearingTest = ({ navigation, hostname, primaryEar, swapLeftRight, binaural
     const [progress, setProgress] = useState(0);
     const [results, setResults] = useState([]);
     const [audioPlayer, setAudioPlayer] = useState(null);
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         setChannel(Cache.getData('MyPrimaryEar'))
@@ -93,8 +98,6 @@ const HearingTest = ({ navigation, hostname, primaryEar, swapLeftRight, binaural
 
         var player = null
 
-
-
         if (state === 'playing') {
             let fileName = 'https://proled.soundbenefits.com/Assets/Audio/' + 'Alpaca_SP_' + frequency + '_' + volume + '_' + (channel === 'left' ? 'L' : 'R') + '.mp3';
             if (swapLeftRight) {
@@ -105,7 +108,6 @@ const HearingTest = ({ navigation, hostname, primaryEar, swapLeftRight, binaural
             }
 
             console.log('fileName ==>' + fileName + '===' + channel + '===>' + progress);
-
 
             const audioPlayer = new Sound(fileName, null, (error) => {
                 if (error) {
@@ -207,10 +209,46 @@ const HearingTest = ({ navigation, hostname, primaryEar, swapLeftRight, binaural
         setPrimaryEar(null);
         // navigate("/ChoosePrimaryEar");
     }
+    const postResults = async () => {
+        setState('completed');
+        let body = {
+            sessionGuid: await AsyncStorage.getItem('SESSION_GUID'),
+            type: "puretone",
+            data: results,
+            binaural: false
+        };
+
+        console.log("body : " + JSON.stringify(body));
+
+        setLoading(true);
+        axios.post(
+            EndPoints.SetResults,
+            body,
+            {
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                }
+            }
+        ).then(res => {
+            setLoading(false);
+            console.log(res.data);
+            let hearScore = res.data.hearScore ? res.data.hearScore : ""
+            try {
+                AsyncStorage.setItem('HEAD_SCORE', hearScore);
+            } catch (error) {
+                throw error;
+            }
+            navigation.navigate('SelfResults');
+        }).catch((err) => {
+            setLoading(false);
+            console.log("Error posting results : " + JSON.stringify(err));
+        })
+    };
 
     return (
-
         <View style={{ flex: 1, backgroundColor: '#ffffff', flexDirection: 'row' }}>
+            <Loader loading={loading} />
             <ScrollView style={{ padding: 10 }}>
                 <View>
                     {(state == 'completed' || state == 'cancelled') ? (<View style={{ flex: 1, paddingLeft: 10, marginVertical: 100, width: '100%', alignContent: 'space-between' }}>
@@ -490,7 +528,7 @@ const HearingTest = ({ navigation, hostname, primaryEar, swapLeftRight, binaural
                 }}
                 onNextPress={() => {
                     //if (state == 'completed') 
-                    navigation.navigate('SelfResults')
+                    postResults();
 
                 }} />
         </View >
